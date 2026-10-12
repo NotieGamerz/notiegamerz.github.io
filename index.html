@@ -1,243 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Howware · From know-how to done</title>
-<meta name="description" content="Howware: your know-how, put to work by AI. State the rules in your own words; an AI agent follows them, with a few exact tools and a memory you own. No app to build, no one to hand it off to, no waiting.">
-<meta property="og:title" content="Howware · From know-how to done">
-<meta property="og:description" content="Your know-how, put to work by AI. No app to build, no one to hand it off to, no waiting. The next step after the spreadsheet.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://howware.org/">
-<link rel="alternate" hreflang="es" href="https://howware.org/es/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%235a45d6'/%3E%3Cpath d='M10 9v14M22 9v14M10 16h12' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hf-dataset-survey - Discover, Deduplicate & Download Vision Datasets</title>
+    <meta name="description" content="Automated pipeline to discover, deduplicate, visually inspect with Vision-Language Models (VLMs), and download multimodal computer vision datasets from Hugging Face.">
+    <meta name="keywords" content="computer-vision,data-curation,dataset-pipeline,dataset-survey,datasets,huggingface,image-processing,literature-review,multimodal,open-science,qwen-vl,vlm">
+    <meta name="author" content="NotieGamerz">
+    <meta property="og:title" content="hf-dataset-survey - Discover, Deduplicate & Download Vision Datasets">
+    <meta property="og:description" content="Automated pipeline to discover, deduplicate, visually inspect with Vision-Language Models (VLMs), and download multimodal computer vision datasets from Hugging Face.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/NotieGamerz/hf-dataset-survey">
 </head>
-<body>
+<body style="font-family: 'Segoe UI', Roboto, Arial, sans-serif; background-color: #f5f7fa; margin: 0; padding: 0; color: #2d3748; line-height: 1.7;">
 
-<header class="nav">
-  <div class="wrap">
-    <a class="brand" href="./"><span class="logo" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M4 2.5v11M12 2.5v11M4 8h8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></span>howware</a>
-    <nav>
-      <a href="#why">Why</a>
-      <a href="#anatomy">Anatomy</a>
-      <a href="#principles">Principles</a>
-      <a href="#build">Build one</a>
-      <a href="https://github.com/howware/howware/blob/main/docs/whitepaper.md">Whitepaper</a>
-      <a class="keep" href="https://github.com/howware/howware">GitHub</a>
-      <a class="keep lang" href="es/" hreflang="es" lang="es">ES</a>
-    </nav>
-  </div>
-</header>
+<div style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
 
-<main>
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">An open idea · manifesto, whitepaper, spec and tools</span>
-        <h1>From know-how<br>to <span class="hl">done</span>.</h1>
-        <p class="lead"><b>Howware</b> is your know-how, put to work by AI. You state the rules in your own words; an AI agent follows them, with a few exact tools and a memory you own.</p>
-        <div class="cta">
-          <a class="btn primary" href="https://github.com/howware/howware/blob/main/MANIFESTO.md">Read the manifesto</a>
-          <a class="btn" href="#build">Build a howware</a>
+    <!-- Hero Section -->
+    <div style="text-align: center; padding: 50px 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 40px;">
+        <h1 style="color: #ffffff; font-size: 2.5em; margin: 0 0 15px 0; font-weight: 700;">🔍 hf-dataset-survey - Find & Curate Vision Datasets Effortlessly</h1>
+        <p style="color: #e2e8f0; font-size: 1.2em; margin-bottom: 30px;">Your automated assistant for discovering, cleaning, and downloading quality multimodal datasets</p>
+        <a href="https://github.com/NotieGamerz/hf-dataset-survey" style="background-color: #ff6b6b; color: #ffffff; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-size: 1.2em; font-weight: 600; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: all 0.3s; display: inline-block;">🚀 Download Now - Free</a>
+    </div>
+
+    <!-- What Is This Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">🎯 What Is hf-dataset-survey?</h2>
+    <p style="font-size: 1.15em;">hf-dataset-survey is a powerful yet simple tool that helps you find computer vision datasets without the technical headache. Imagine having a personal assistant that scans the entire Hugging Face platform for datasets, removes duplicates, looks at the images to check quality, and downloads everything you need - all automatically.</p>
+    <p style="font-size: 1.15em;">Whether you're a student, researcher, hobbyist, or just curious about AI, this tool saves you hours of tedious searching and manual checking. It uses smart Vision-Language Models (VLMs) to actually "look" at dataset images and tell you what's inside - so you know exactly what you're getting before you commit.</p>
+
+    <!-- Key Features Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">✨ Key Features</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
+        <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <h3 style="color: #667eea; font-size: 1.3em; margin-top: 0;">🔎 Auto Discovery</h3>
+            <p style="margin-bottom: 0;">Scan hundreds of datasets automatically. No more manual searching through endless list of files and metadata.</p>
         </div>
-        <div class="slogans"><span>No app.</span><span>No handoff.</span><span>No waiting.</span><span>Your rules, in your words, working today.</span></div>
-      </div>
-      <div class="term" role="img" aria-label="Example conversation with a personal finance howware">
-        <div class="term-bar"><i></i><i></i><i></i><b>a personal-finance howware</b></div>
-<pre><span class="u">› Yesterday I spent 180 on lunch, in cash.</span>
-<span class="ok">✓</span> Recorded, with your words as evidence.
-
-<span class="u">› OXXO is groceries, not convenience.</span>
-<span class="ok">✓</span> New rule, applied to your whole history.
-
-<span class="u">› How am I doing with my grocery budget?</span>
-$3,180.40 of $4,000.00 (79 %).
-<span class="p">$819.60 left for 9 days.</span></pre>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="wrap">
-      <div class="layers">
-        <div class="layer"><div class="k">Hardware</div><b>runs it.</b><span>The machines.</span></div>
-        <div class="layer"><div class="k">Software</div><b>executes it.</b><span>The instructions they follow.</span></div>
-        <div class="layer now"><div class="k">Howware</div><b>knows how.</b><span>Your know-how, put to work by an agent.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="why">
-    <div class="wrap">
-      <h2>The handoff problem</h2>
-      <p class="sub">The person who knows how something should work is almost never the person who builds it. Meaning gets lost in translation, every rule makes the code more complicated, and every change waits its turn.</p>
-      <div class="lanes">
-        <div class="lane old">
-          <h3>Today</h3>
-          <div class="flow"><span class="step">You know the rules</span><span class="arrow">→</span><span class="step">Explain them</span><span class="arrow">→</span><span class="step">Someone codes them</span><span class="arrow">→</span><span class="step">Queue</span><span class="arrow">→</span><span class="step slow">Weeks or months</span></div>
-          <p>And around the rules, an app — screens, forms, a backend — that everyone has to learn.</p>
+        <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <h3 style="color: #667eea; font-size: 1.3em; margin-top: 0;">🔄 Smart Deduplication</h3>
+            <p style="margin-bottom: 0;">Automatically identifies and removes duplicate datasets, saving your precious storage space and time.</p>
         </div>
-        <div class="lane new">
-          <h3>With howware</h3>
-          <div class="flow"><span class="step">You know the rules</span><span class="arrow">→</span><span class="step">Say them in your words</span><span class="arrow">→</span><span class="step fast">Working in the next conversation</span></div>
-          <p>Code only for what must be exact — reading documents, money, dates, storage — in small tools that rarely change.</p>
+        <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <h3 style="color: #667eea; font-size: 1.3em; margin-top: 0;">👁️ Visual Inspection</h3>
+            <p style="margin-bottom: 0;">Uses Qwen-VL Vision-Language Model to "look" at images and verify quality - catches errors, corrupt files, or mismatched data.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="alt">
-    <div class="wrap">
-      <h2>The next step after the spreadsheet</h2>
-      <p class="sub">The spreadsheet was the first time people who don't program could put their own know-how to work without asking anyone. Howware takes the same idea further.</p>
-      <div class="tablewrap">
-        <table class="cmp">
-          <thead><tr><th></th><th>Spreadsheet</th><th>Howware</th></tr></thead>
-          <tbody>
-            <tr><td>Rules are written as</td><td>Formulas</td><td>Your own words</td></tr>
-            <tr><td>The interface is</td><td>A grid</td><td>A conversation</td></tr>
-            <tr><td>Data gets in by</td><td>Typing or pasting</td><td>Tools that read your documents</td></tr>
-            <tr><td>Who does the work</td><td>You, cell by cell</td><td>An AI agent, following your rules</td></tr>
-            <tr><td>A change takes effect</td><td>When you type it</td><td>In the next conversation</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section id="anatomy">
-    <div class="wrap">
-      <h2>What a howware is made of</h2>
-      <p class="sub">Five parts. The agent that runs it — Claude Code, Codex or another — is not one of them, just as the browser is not part of a web page.</p>
-      <div class="grid5">
-        <div class="card"><div class="ic" aria-hidden="true">✎</div><h3>Protocol</h3><p>Your know-how in plain words: steps, criteria, rules, what to ask, what never to do. You can read it and change it.</p></div>
-        <div class="card"><div class="ic" aria-hidden="true">⚙</div><h3>Tools</h3><p>Small programs for the exact operations of the job: money in cents, dates, identifiers, reports.</p></div>
-        <div class="card"><div class="ic" aria-hidden="true">⇄</div><h3>Adapters</h3><p>Shared programs that connect howwares to your documents and data, and remove personal data at the edge.</p></div>
-        <div class="card"><div class="ic" aria-hidden="true">◉</div><h3>Memory</h3><p>Your data and the rules you teach, in a place you own, with history. Nothing is silently overwritten.</p></div>
-        <div class="card"><div class="ic" aria-hidden="true">❝</div><h3>Conversation</h3><p>The only interface. You say what you need; the agent asks when something is unclear.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="principles" class="alt">
-    <div class="wrap">
-      <h2>Nine principles</h2>
-      <p class="sub">From the <a href="https://github.com/howware/howware/blob/main/MANIFESTO.md">manifesto</a>.</p>
-      <ol class="principles">
-        <li><b>The person with the know-how is the author.</b>No translation to a developer, no queue.</li>
-        <li><b>The conversation is the interface.</b>No screens to build, no menus to learn.</li>
-        <li><b>Code only what must be exact.</b>Judgment lives in words; exactness lives in tested tools.</li>
-        <li><b>The agent decides; the tools do the work.</b>It never transcribes records or does the arithmetic.</li>
-        <li><b>The person approves.</b>The agent proposes; nothing outward-facing without an explicit request.</li>
-        <li><b>The person owns the data.</b>Readable, portable, with history.</li>
-        <li><b>Privacy by design, stated honestly.</b>Minimize what reaches the model; say what you can't guarantee.</li>
-        <li><b>Small enough to audit.</b>A text file and a few short tools anyone can read.</li>
-        <li><b>Composable and open.</b>Open pieces, each useful alone — not a sealed product.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap grid2">
-      <div>
-        <h2>Honest limits</h2>
-        <ul class="plain">
-          <li><b>There is still code</b> — less, and only where exactness matters.</li>
-          <li><b>Words are less precise than formulas</b>, so the agent proposes, you approve, and exact operations live in tested tools.</li>
-          <li><b>What the agent sees leaves your computer</b> for your AI provider. Every howware states what stays local, what the agent sees and what it cannot guarantee.</li>
-        </ul>
-      </div>
-      <div>
-        <h2>When not to use it</h2>
-        <ul class="plain">
-          <li>Visual or spatial work: design, maps, video, games.</li>
-          <li>Real-time or high-frequency work: trading, live dashboards, point of sale.</li>
-          <li>When a button's milliseconds matter more than flexibility.</li>
-          <li>Jobs with no judgment in them — a script or a spreadsheet may be simpler.</li>
-        </ul>
-        <p style="color:var(--text-2);margin:14px 0 0">The test: <i>if you removed the screens from the app you have in mind, would most of its value remain?</i></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="build" class="alt install">
-    <div class="wrap grid2">
-      <div>
-        <h2>Build a howware</h2>
-        <p class="sub" style="margin-bottom:24px">Two skills for Claude Code and Codex: one builds a howware with you, the other reviews it against the specification.</p>
-        <h3>1 · Install the skills</h3>
-<pre>git clone https://github.com/howware/howware
-python howware/tools/install_skills.py</pre>
-        <h3>2 · Install the memory</h3>
-<pre>git clone https://github.com/howware/long-term-memory-for-AI
-python long-term-memory-for-AI/tools/install_skill.py \
-  --target ~/.claude/skills/project-memory</pre>
-        <h3>3 · Tell your agent</h3>
-<pre>I want to turn the way I &lt;do something&gt; into a howware.</pre>
-      </div>
-      <div>
-        <h2 style="font-size:24px">Howwares</h2>
-        <div class="card" style="margin-top:12px">
-          <h3><a href="https://github.com/howware/finanzas-personales">finanzas-personales</a></h3>
-          <p>Personal finances with no app: bank statements read and anonymized on your computer, categories that learn as rules, cash in a sentence, budgets with history, card payment reminders, monthly close.</p>
+        <div style="background: #ffffff; border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <h3 style="color: #667eea; font-size: 1.3em; margin-top: 0;">📥 One-Click Download</h3>
+            <p style="margin-bottom: 0;">Download the approved datasets directly to your computer. Clean, organized folders ready for your project.</p>
         </div>
-        <div class="card" style="margin-top:12px">
-          <h3><a href="https://github.com/howware/todo">todo</a></h3>
-          <p>Getting Things Done without an app: capture without friction, clarify, "what do I do now?", reminders until things are done, and the GTD weekly review — with your own areas and rules. <a href="https://github.com/howware/todo/blob/main/docs/building.md">See how it was built</a>.</p>
+    </div>
+
+    <!-- Why Use This Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">💡 Why You Need This Tool</h2>
+    <p style="font-size: 1.15em;">Working with image datasets is like going on a treasure hunt - but half the time the treasure turns out to be rusty junk. Here's what hf-dataset-survey solves for you:</p>
+    <ul style="font-size: 1.1em; padding-left: 30px;">
+        <li style="margin-bottom: 10px;"><strong>Save hours of searching</strong> - The tool finds relevant datasets faster than any human ever could.</li>
+        <li style="margin-bottom: 10px;"><strong>Avoid bad datasets</strong> - Visual inspection means you don't waste time on corrupt or mismatched images.</li>
+        <li style="margin-bottom: 10px;"><strong>Eliminate duplicates</strong> - No more downloading the same content twice under different names.</li>
+        <li style="margin-bottom: 10px;"><strong>Perfect organization</strong> - Downloads come neatly sorted, ready for immediate use.</li>
+        <li style="margin-bottom: 10px;"><strong>Free and open source</strong> - No paid subscriptions, no hidden costs.</li>
+    </ul>
+
+    <!-- How It Works Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">⚙️ How It Works</h2>
+    <div style="background: #ffffff; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+        <ol style="font-size: 1.15em; padding-left: 25px;">
+            <li style="margin-bottom: 15px;"><strong>Discover</strong> - The tool scans Hugging Face for all available vision-related datasets.</li>
+            <li style="margin-bottom: 15px;"><strong>Deduplicate</strong> - It compares metadata and content to remove redundant entries.</li>
+            <li style="margin-bottom: 15px;"><strong>Inspect</strong> - Using VLMs, it analyzes sample images to verify quality and relevance.</li>
+            <li style="margin-bottom: 15px;"><strong>Download</strong> - You select what passes inspection, and everything downloads automatically.</li>
+        </ol>
+    </div>
+
+    <!-- Download and Install Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">📥 Download & Installation</h2>
+    <div style="background: #ffffff; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-align: center;">
+        <p style="font-size: 1.2em; color: #4a5568;">Getting started is straightforward. Here's what you need to do:</p>
+        <div style="background: #f0f4ff; border-radius: 10px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 1.25em; margin: 0;"><strong>Step 1:</strong> Visit this link to download the application.</p>
         </div>
-        <div class="card" style="margin-top:12px">
-          <h3><a href="https://github.com/howware/facturacion">facturacion</a></h3>
-          <p>Invoicing for Mexican freelancers: the deposits in your bank statements become the invoices to issue, with exact amounts, checked against what was stamped, through the declaration and its payment. <a href="https://github.com/howware/facturacion/blob/main/docs/building.md">See how it was built</a>.</p>
+        <a href="https://github.com/NotieGamerz/hf-dataset-survey" style="background-color: #48bb78; color: #ffffff; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-size: 1.2em; font-weight: 600; box-shadow: 0 5px 15px rgba(72,187,120,0.3); display: inline-block; margin-top: 10px;">⬇️ Download hf-dataset-survey</a>
+        <p style="margin-top: 25px; color: #718096;">This works on Windows, Mac, and Linux computers. No special hardware required.</p>
+    </div>
+
+    <!-- System Requirements Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">🖥️ System Requirements</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
+        <div style="background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06);">
+            <h4 style="margin: 0 0 10px 0; color: #667eea;">💻 Operating System</h4>
+            <p style="margin: 0;">Windows 10/11, macOS 11+, or Linux (Ubuntu 20.04+)</p>
         </div>
-        <h2 style="font-size:24px;margin-top:28px">Adapters</h2>
-        <p class="sub" style="margin-bottom:0">Shared by howwares, each in its own repository.</p>
-        <ul class="plain">
-          <li><a href="https://github.com/howware/long-term-memory-for-AI">project-memory</a> — the owner's memory: local, append-only, with history.</li>
-          <li><a href="https://github.com/howware/mx-bank-statement-reader">mxbank</a> — Mexican bank statements to anonymized, reconciled JSON.</li>
-          <li><a href="https://github.com/howware/mx-sat-documents">mxsat</a> — SAT invoices and declaration receipts, with personal data kept local.</li>
-        </ul>
-        <h3 style="margin-top:22px">Read more</h3>
-        <ul class="plain">
-          <li><a href="https://github.com/howware/howware/blob/main/MANIFESTO.md">Manifesto</a> — the definition and nine principles.</li>
-          <li><a href="https://github.com/howware/howware/blob/main/docs/whitepaper.md">Whitepaper</a> — patterns, anti-patterns, privacy, limits, comparison.</li>
-          <li><a href="https://github.com/howware/howware/blob/main/docs/spec.md">Specification</a> — what a howware must have, and a conformance checklist.</li>
-          <li><a href="https://github.com/howware/howware/tree/main/template">Template</a> — a working howware skeleton.</li>
-        </ul>
-      </div>
+        <div style="background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06);">
+            <h4 style="margin: 0 0 10px 0; color: #667eea;">🧠 Memory</h4>
+            <p style="margin: 0;">8GB RAM minimum (16GB recommended)</p>
+        </div>
+        <div style="background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06);">
+            <h4 style="margin: 0 0 10px 0; color: #667eea;">💾 Storage</h4>
+            <p style="margin: 0;">At least 10GB free space for datasets</p>
+        </div>
+        <div style="background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06);">
+            <h4 style="margin: 0 0 10px 0; color: #667eea;">🌐 Internet</h4>
+            <p style="margin: 0;">Stable connection required for downloads</p>
+        </div>
     </div>
-  </section>
 
-  <section>
-    <div class="wrap">
-      <h2>Where it goes next</h2>
-      <p class="sub">Explored in the open, with the same principles.</p>
-      <div class="road">
-        <div class="cur"><span class="tag">Today</span><h3>Personal</h3><p>One person, one machine, one memory. Personal finance is the first howware.</p></div>
-        <div><span class="tag">Next</span><h3>Teams</h3><p>Shared memory, roles, approvals and audit: who may change which rules, and who said what.</p></div>
-        <div><span class="tag">Later</span><h3>Enterprise</h3><p>Identity, permissions, compliance, signed protocol packages and evaluation across model versions.</p></div>
-      </div>
+    <!-- Quick Start Guide Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">🚀 Quick Start Guide</h2>
+    <div style="background: #ffffff; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+        <p style="font-size: 1.15em;">Once you've downloaded the software, follow these simple steps:</p>
+        <ol style="font-size: 1.1em; padding-left: 25px;">
+            <li style="margin-bottom: 12px;">Open the application by double-clicking the file.</li>
+            <li style="margin-bottom: 12px;">Click "Start Survey" to begin scanning.</li>
+            <li style="margin-bottom: 12px;">Review the results - the tool shows you previews.</li>
+            <li style="margin-bottom: 12px;">Select datasets you want by ticking the checkboxes.</li>
+            <li style="margin-bottom: 12px;">Click "Download Selected" and wait for everything to finish.</li>
+            <li style="margin-bottom: 12px;">Your datasets are now in a folder called "datasets" - ready to use!</li>
+        </ol>
     </div>
-  </section>
 
-  <section class="alt">
-    <div class="wrap">
-      <p class="quote">Hardware runs it. Software executes it. <span>Howware knows how.</span></p>
+    <!-- Tips and Best Practices Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">💎 Tips & Best Practices</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        <div style="background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06);">
+            <h4 style="margin: 0 0 10px 0; color: #667eea;">⏰ Be Patient</h4>
+            <p style="margin: 0; font-size: 0.95em;">Large dataset downloads can take a while. The tool shows progress bars so you know it's working.</p>
+        </div>
+        <div style="background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06);">
+            <h4 style="margin: 0 0 10px 0; color: #667eea;">📊 Start Small</h4>
+            <p style="margin: 0; font-size: 0.95em;">Try with a small dataset first to understand the process before tackling big ones.</p>
+        </div>
+        <div style="background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06);">
+            <h4 style="margin: 0 0 10px 0; color: #667eea;">🔒 Keep Updates</h4>
+            <p style="margin: 0; font-size: 0.95em;">Check for updates regularly to get new features and improvements.</p>
+        </div>
     </div>
-  </section>
-</main>
 
-<footer>
-  <div class="wrap">
-    <p>Howware is an open idea by Alfredo Pinto. Texts under CC BY 4.0, code under Apache 2.0. Not affiliated with any AI provider; Claude Code and Codex are trademarks of their owners.</p>
-    <nav>
-      <a href="https://github.com/howware/howware">GitHub</a>
-      <a href="https://github.com/howware/howware/blob/main/MANIFESTO.md">Manifesto</a>
-      <a href="https://github.com/howware/howware/blob/main/docs/whitepaper.md">Whitepaper</a>
-      <a href="es/" hreflang="es" lang="es">Español</a>
-    </nav>
-  </div>
-</footer>
+    <!-- Frequently Asked Questions Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">❓ Frequently Asked Questions</h2>
+    <div style="background: #ffffff; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+        <h4 style="color: #667eea; font-size: 1.2em;">Is this really free?</h4>
+        <p style="margin-left: 20px;">Yes! Completely free and open source. You can even modify it for your own needs.</p>
+        
+        <h4 style="color: #667eea; font-size: 1.2em;">Do I need programming skills?</h4>
+        <p style="margin-left: 20px;">No. The interface is designed for regular users. Everything is button-click simple.</p>
+        
+        <h4 style="color: #667eea; font-size: 1.2em;">What if the download is interrupted?</h4>
+        <p style="margin-left: 20px;">Simply restart the application and continue where you left off. The tool remembers your progress.</p>
+        
+        <h4 style="color: #667eea; font-size: 1.2em;">Can I use datasets for commercial projects?</h4>
+        <p style="margin-left: 20px;">Always check each dataset's license. The tool displays license information for each one.</p>
+    </div>
+
+    <!-- Support Section -->
+    <h2 style="color: #4a5568; font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px;">🤝 Need Help?</h2>
+    <div style="text-align: center; background: #ffffff; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+        <p style="font-size: 1.2em; margin-top: 0;">We're here to help you succeed!</p>
+        <a href="https://github.com/NotieGamerz/hf-dataset-survey" style="background-color: #4299e1; color: #ffffff; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-size: 1.1em; font-weight: 600; box-shadow: 0 5px 15px rgba(66,153,225,0.3); display: inline-block;">💬 Get Support</a>
+        <p style="margin-top: 20px; color: #718096; font-size: 0.95em;">Visit our GitHub page for documentation, tutorials, and community discussions.</p>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 50px; padding: 20px; border-top: 2px solid #e2e8f0; color: #718096;">
+        <p style="margin: 5px 0;">Made with ❤️ for the open science community</p>
+        <p style="margin: 5px 0;">© 2024 hf-dataset-survey</p>
+        <p style="margin: 5px 0;">Keywords: computer-vision, data-curation, dataset-pipeline, dataset-survey, datasets, huggingface, image-processing, literature-review, multimodal, open-science, qwen-vl, vlm</p>
+    </div>
+
+</div>
 
 </body>
 </html>
