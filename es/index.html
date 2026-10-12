@@ -109,10 +109,11 @@ $3,180.40 de $4,000.00 (79 %).
   <section id="anatomia">
     <div class="wrap">
       <h2>De qué está hecho un howware</h2>
-      <p class="sub">Cuatro partes. El agente que lo ejecuta —Claude Code, Codex u otro— no es una de ellas, igual que el navegador no es parte de una página web.</p>
-      <div class="grid4">
+      <p class="sub">Cinco partes. El agente que lo ejecuta —Claude Code, Codex u otro— no es una de ellas, igual que el navegador no es parte de una página web.</p>
+      <div class="grid5">
         <div class="card"><div class="ic" aria-hidden="true">✎</div><h3>Protocolo</h3><p>Tu saber hacer en palabras claras: pasos, criterios, reglas, qué preguntar, qué nunca hacer. Lo puedes leer y cambiar.</p></div>
-        <div class="card"><div class="ic" aria-hidden="true">⚙</div><h3>Herramientas</h3><p>Programas pequeños para lo que debe ser exacto: leer documentos, dinero en centavos, fechas, identificadores, almacenamiento.</p></div>
+        <div class="card"><div class="ic" aria-hidden="true">⚙</div><h3>Herramientas</h3><p>Programas pequeños para las operaciones exactas del trabajo: dinero en centavos, fechas, identificadores, reportes.</p></div>
+        <div class="card"><div class="ic" aria-hidden="true">⇄</div><h3>Adaptadores</h3><p>Programas compartidos que conectan a los howwares con tus documentos y datos, y quitan los datos personales en el borde.</p></div>
         <div class="card"><div class="ic" aria-hidden="true">◉</div><h3>Memoria</h3><p>Tus datos y las reglas que enseñas, en un lugar tuyo, con historia. Nada se sobrescribe en silencio.</p></div>
         <div class="card"><div class="ic" aria-hidden="true">❝</div><h3>Conversación</h3><p>La única interfaz. Dices lo que necesitas; el agente pregunta cuando algo no está claro.</p></div>
       </div>
@@ -185,6 +186,13 @@ python long-term-memory-for-AI/tools/install_skill.py \
           <h3><a href="https://github.com/howware/todo">todo</a></h3>
           <p>Getting Things Done sin app: capturar sin fricción, aclarar, «¿qué hago ahora?», recordatorios hasta que se cumpla y la revisión semanal de GTD, con tus propias áreas y reglas. <a href="https://github.com/howware/todo/blob/main/docs/building.md">Mira cómo se construyó</a>.</p>
         </div>
+        <h2 style="font-size:24px;margin-top:28px">Adaptadores</h2>
+        <p class="sub" style="margin-bottom:0">Los comparten los howwares; cada uno vive en su propio repositorio.</p>
+        <ul class="plain">
+          <li><a href="https://github.com/howware/long-term-memory-for-AI">project-memory</a>: la memoria del dueño, local, solo de agregado, con historia.</li>
+          <li><a href="https://github.com/howware/mx-bank-statement-reader">mxbank</a>: estados de cuenta de bancos mexicanos a JSON anonimizado y conciliado.</li>
+          <li><a href="https://github.com/howware/mx-sat-documents">mxsat</a>: facturas y acuses del SAT, con los datos personales en tu computadora.</li>
+        </ul>
         <h3 style="margin-top:22px">Para leer más</h3>
         <ul class="plain">
           <li><a href="https://github.com/howware/howware/blob/main/MANIFIESTO.md">Manifiesto</a>: la definición y los nueve principios.</li>
